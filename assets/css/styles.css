@@ -6,9 +6,40 @@
     margin: 0%;
     padding: 0%;
 }
+.container
+{
+    margin: 5%;
+}
+.table
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body
+{
+    color: #616161;
+}
+.heading
+{
+    font-size: 200%;
+    color: #616161;
+    margin-bottom: 1%;
+}
+#row-header
+{
+    background-color: rgb(68, 68, 252);
+    padding: 0.5%;
+    color: white;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.rows
+{
+    padding: 0.5%;
+}
 .rows
 {
     display: flex;
+    justify-content: end;
 }
 .rows .column1
 {
@@ -38,4 +69,36 @@ input::-webkit-inner-spin-button {
 }
 input[type=number] {
   -moz-appearance: textfield;
+}
+.rows button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rows button .central
+{
+    display: flex;
+}
+#final
+{
+    justify-content: start;
+}
+#final button
+{
+    padding: 0.5%;
+    border: none;
+    background-color: #e6e6e6;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#calc
+{
+    background-color: #e6e6e6;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#clear_all
+{
+    margin-left: 1%;
 }

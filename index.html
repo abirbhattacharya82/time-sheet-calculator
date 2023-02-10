@@ -15,7 +15,7 @@
             Time Sheet Calculator
         </div>
         <div class="table">
-            <div class="rows">
+            <div class="rows" id="row-header">
                 <div class="column1">
                     Day
                 </div>
@@ -34,189 +34,206 @@
             </div>
             <div class="rows">
                 <div class="column1">
-                    Monday
+                    <b>Monday</b>
                 </div>
                 <div class="column2">
-                    <input type="number" min="1" max="12" value="8"> : <input type="number" min="0" max="60" value="00"> <select
-                        name="am-or-pm" id="am-or-pm">
+                    <input type="number" min="1" max="12" value="0" id="start_h_mon"> : <input type="number" min="0" max="60" value="00" id="start_m_mon">
+                    <select name="am-or-pm" id="start_am_mon">
                         <option value="AM">AM</option>
                         <option value="PM">PM</option>
                     </select>
                 </div>
                 <div class="column3">
-                    <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00"> <select
-                        name="am-or-pm" id="am-or-pm">
+                    <input type="number" min="1" max="12" value="0" id="end_h_mon"> : <input type="number" min="0" max="60" value="00" id="end_m_mon">
+                    <select name="am-or-pm" id="end_am_mon">
                         <option value="AM">AM</option>
                         <option value="PM">PM</option>
                     </select>
                 </div>
                 <div class="column4">
-                    <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00">
+                    <input type="number" min="1" max="12" value="0" id="break_h_mon"> : <input type="number" min="0" max="60" value="00" id="break_m_mon">
                 </div>
-                <div class="column5">
-                    
+                <div class="column5" id="time_mon">
+                    00.00
                 </div>
             </div>
             <div class="rows">
                 <div class="column1">
-                    Tuesday
+                    <b>Tuesday</b>
                 </div>
                 <div class="column2">
-                    <input type="number" min="1" max="12" value="8"> : <input type="number" min="0" max="60" value="00"> <select
-                        name="am-or-pm" id="am-or-pm">
+                    <input type="number" min="1" max="12" value="0" id="start_h_tue"> : <input type="number" min="0" max="60" value="00" id="start_m_tue">
+                    <select name="am-or-pm" id="start_am_tue">
                         <option value="AM">AM</option>
                         <option value="PM">PM</option>
                     </select>
                 </div>
                 <div class="column3">
-                    <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00"> <select
-                        name="am-or-pm" id="am-or-pm">
+                    <input type="number" min="1" max="12" value="0" id="end_h_tue"> : <input type="number" min="0" max="60" value="00" id="end_m_tue">
+                    <select name="am-or-pm" id="end_am_tue">
                         <option value="AM">AM</option>
                         <option value="PM">PM</option>
                     </select>
                 </div>
                 <div class="column4">
-                    <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00">
+                    <input type="number" min="1" max="12" value="0" id="break_h_tue"> : <input type="number" min="0" max="60" value="00" id="break_m_tue">
                 </div>
-                <div class="column5">
-                    
+                <div class="column5" id="time_tue">
+                    00.00
                 </div>
             </div>
+            <div class="rows">
+                <div class="column1">
+                    <b>Wednesday</b>
+                </div>
+                <div class="column2">
+                    <input type="number" min="1" max="12" value="0" id="start_h_wed"> : <input type="number" min="0" max="60" value="00" id="start_m_wed">
+                    <select name="am-or-pm" id="start_am_wed">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="column3">
+                    <input type="number" min="1" max="12" value="0" id="end_h_wed"> : <input type="number" min="0" max="60" value="00" id="end_m_wed">
+                    <select name="am-or-pm" id="end_am_wed">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="column4">
+                    <input type="number" min="1" max="12" value="0" id="break_h_wed"> : <input type="number" min="0" max="60" value="00" id="break_m_wed">
+                </div>
+                <div class="column5" id="time_wed">
+                    00.00
+                </div>
+            </div>
+            <div class="rows">
+                <div class="column1">
+                    <b>Thursday</b>
+                </div>
+                <div class="column2">
+                    <input type="number" min="1" max="12" value="0" id="start_h_thu"> : <input type="number" min="0" max="60" value="00" id="start_m_thu">
+                    <select name="am-or-pm" id="start_am_thu">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="column3">
+                    <input type="number" min="1" max="12" value="0" id="end_h_thu"> : <input type="number" min="0" max="60" value="00" id="end_m_thu">
+                    <select name="am-or-pm" id="end_am_thu">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="column4">
+                    <input type="number" min="1" max="12" value="0" id="break_h_thu"> : <input type="number" min="0" max="60" value="00" id="break_m_thu">
+                </div>
+                <div class="column5" id="time_thu">
+                    00.00
+                </div>
+            </div>
+            <div class="rows">
+                <div class="column1">
+                    <b>Friday</b>
+                </div>
+                <div class="column2">
+                    <input type="number" min="1" max="12" value="0" id="start_h_fri"> : <input type="number" min="0" max="60" value="00" id="start_m_fri">
+                    <select name="am-or-pm" id="start_am_fri">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="column3">
+                    <input type="number" min="1" max="12" value="0" id="end_h_fri"> : <input type="number" min="0" max="60" value="00" id="end_m_fri">
+                    <select name="am-or-pm" id="end_am_fri">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="column4">
+                    <input type="number" min="1" max="12" value="0" id="break_h_fri"> : <input type="number" min="0" max="60" value="00" id="break_m_fri">
+                </div>
+                <div class="column5" id="time_fri">
+                    00.00
+                </div>
+            </div>
+            <div class="rows">
+                <div class="column1">
+                    <b>Saturday</b>
+                </div>
+                <div class="column2">
+                    <input type="number" min="1" max="12" value="0" id="start_h_sat"> : <input type="number" min="0" max="60" value="00" id="start_m_sat">
+                    <select name="am-or-pm" id="start_am_sat">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="column3">
+                    <input type="number" min="1" max="12" value="0" id="end_h_sat"> : <input type="number" min="0" max="60" value="00" id="end_m_sat">
+                    <select name="am-or-pm" id="end_am_sat">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="column4">
+                    <input type="number" min="1" max="12" value="0" id="break_h_sat"> : <input type="number" min="0" max="60" value="00" id="break_m_sat">
+                </div>
+                <div class="column5" id="time_sat">
+                    00.00
+                </div>
+            </div>
+            <div class="rows">
+                <div class="column1">
+                    <b>Sunday</b>
+                </div>
+                <div class="column2">
+                    <input type="number" min="1" max="12" value="0" id="start_h_sun"> : <input type="number" min="0" max="60" value="00" id="start_m_sun">
+                    <select name="am-or-pm" id="start_am_sun">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="column3">
+                    <input type="number" min="1" max="12" value="0" id="end_h_sun"> : <input type="number" min="0" max="60" value="00" id="end_m_sun">
+                    <select name="am-or-pm" id="end_am_sun">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="column4">
+                    <input type="number" min="1" max="12" value="0" id="break_h_sun"> : <input type="number" min="0" max="60" value="00" id="break_m_sun">
+                </div>
+                <div class="column5" id="time_sun">
+                    00.00
+                </div>
+            </div>
+            <div class="rows" id="calc">
+                <b><span>Total Hours:</span><span id="total_hrs">00.00</span></b>
+            </div>
         </div>
-        <div class="rows">
-            <div class="column1">
-                Wednesday
-            </div>
-            <div class="column2">
-                <input type="number" min="1" max="12" value="8"> : <input type="number" min="0" max="60" value="00"> <select
-                    name="am-or-pm" id="am-or-pm">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                </select>
-            </div>
-            <div class="column3">
-                <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00"> <select
-                    name="am-or-pm" id="am-or-pm">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                </select>
-            </div>
-            <div class="column4">
-                <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00">
-            </div>
-            <div class="column5">
-                
-            </div>
-        </div>
-        <div class="rows">
-            <div class="column1">
-                Thursday
-            </div>
-            <div class="column2">
-                <input type="number" min="1" max="12" value="8"> : <input type="number" min="0" max="60" value="00"> <select
-                    name="am-or-pm" id="am-or-pm">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                </select>
-            </div>
-            <div class="column3">
-                <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00"> <select
-                    name="am-or-pm" id="am-or-pm">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                </select>
-            </div>
-            <div class="column4">
-                <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00">
-            </div>
-            <div class="column5">
-                
-            </div>
-        </div>
-        <div class="rows">
-            <div class="column1">
-                Friday
-            </div>
-            <div class="column2">
-                <input type="number" min="1" max="12" value="8"> : <input type="number" min="0" max="60" value="00"> <select
-                    name="am-or-pm" id="am-or-pm">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                </select>
-            </div>
-            <div class="column3">
-                <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00"> <select
-                    name="am-or-pm" id="am-or-pm">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                </select>
-            </div>
-            <div class="column4">
-                <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00">
-            </div>
-            <div class="column5">
-                
-            </div>
-        </div>
-        <div class="rows">
-            <div class="column1">
-                Saturday
-            </div>
-            <div class="column2">
-                <input type="number" min="1" max="12" value="8"> : <input type="number" min="0" max="60" value="00"> <select
-                    name="am-or-pm" id="am-or-pm">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                </select>
-            </div>
-            <div class="column3">
-                <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00"> <select
-                    name="am-or-pm" id="am-or-pm">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                </select>
-            </div>
-            <div class="column4">
-                <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00">
-            </div>
-            <div class="column5">
-                
-            </div>
-        </div>
-        <div class="rows">
-            <div class="column1">
-                Sunday
-            </div>
-            <div class="column2">
-                <input type="number" min="1" max="12" value="8"> : <input type="number" min="0" max="60" value="00"> <select
-                    name="am-or-pm" id="am-or-pm">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                </select>
-            </div>
-            <div class="column3">
-                <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00"> <select
-                    name="am-or-pm" id="am-or-pm">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                </select>
-            </div>
-            <div class="column4">
-                <input type="number" min="1" max="12" value="0"> : <input type="number" min="0" max="60" value="00">
-            </div>
-            <div class="column5">
-                
-            </div>
-        </div>
-        <div class="final">
-
-        </div>
-        <div class="rows">
-            <button>
-                
+        <div class="rows" id="final">
+            <button id="calculate" onclick="calculate_time()">
+                <div class="central">
+                    <div class="image">
+                        <img src="./assets/img/calculator.png" alt="">
+                    </div>
+                    <div class="text">
+                        CALCULATE
+                    </div>
+                </div>
+            </button>
+            <button id="clear_all" onclick="clear_all()">
+                <div class="central">
+                    <div class="image">
+                        <img src="./assets/img/multiply.png" alt="">
+                    </div>
+                    <div class="text">
+                        CLEAR ALL
+                    </div>
+                </div>
             </button>
         </div>
     </div>
+    <script src="./assets/js/index.js"></script>
 </body>
-
 </html>
