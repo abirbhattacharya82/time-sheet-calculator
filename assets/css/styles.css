@@ -1,0 +1,41 @@
+/*
+#616161
+*/
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+.rows
+{
+    display: flex;
+}
+.rows .column1
+{
+    width: 20%;
+}
+.rows .column2
+{
+    width: 20%;
+}
+.rows .column3
+{
+    width: 20%;
+}
+.rows .column4
+{
+    width: 20%;
+}
+.rows .column5
+{
+    width: 20%;
+    text-align: right;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
